@@ -1,0 +1,25 @@
+const s=d=>`<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
+const EYE='M12 5C7 5 2.7 8.1 1 12c1.7 3.9 6 7 11 7s9.3-3.1 11-7c-1.7-3.9-6-7-11-7zm0 11.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z';
+export const I={
+  back:s('M15.4 5.4 14 4l-8 8 8 8 1.4-1.4L8.8 12z'),
+  play:s('M8 5v14l11-7z'),
+  pause:s('M6 5h4v14H6zm8 0h4v14h-4z'),
+  prev:s('M6 6h2v12H6zm3.5 6 8.5 6V6z'),
+  next:s('M16 6h2v12h-2zM6 18l8.5-6L6 6z'),
+  plus:s('M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z'),
+  minus:s('M5 11h14v2H5z'),
+  trash:s('M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z'),
+  eye:s(EYE),
+  eyeoff:`<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="${EYE}" opacity=".45"/><path d="M3 3l18 18" stroke="currentColor" stroke-width="2" fill="none"/></svg>`,
+  up:s('M7 14l5-5 5 5z'),
+  down:s('M7 10l5 5 5-5z'),
+  text:s('M5 4v3h5.5v12h3V7H19V4z'),
+  shape:s('M3 3h8v8H3zM13 13h8v8h-8z'),
+  circle:s('M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z'),
+  media:s('M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2zM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5z'),
+  fx:s('M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z'),
+  key:s('M12 3 3 12l9 9 9-9z'),
+  graph:s('M3 17l6-6 4 4 8-8-1.4-1.4L13 12.2l-4-4-7.4 7.4z'),
+  sliders:s('M3 17v2h6v-2zM3 5v2h10V5zm10 14h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9zm14 4v-2H11v2zm-6-4h2V7h4V5h-4V3h-2z'),
+  audio:s('M3 9v6h4l5 5V4L7 9zm13.5 3A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4z'),
+};

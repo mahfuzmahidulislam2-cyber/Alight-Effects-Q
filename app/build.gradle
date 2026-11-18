@@ -1,0 +1,19 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.aeq.editor'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.aeq.editor'
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName '0.1.0'
+    }
+    buildTypes { release { minifyEnabled false } }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+// No third-party dependencies on purpose: the app is a WebView shell around assets/www.
